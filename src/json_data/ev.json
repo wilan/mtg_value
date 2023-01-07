@@ -1,0 +1,1378 @@
+{
+  "dmu_draft": {
+    "description": "Default Draft Box:\nrare = 36 packs * 6.5 / 7.5 * 1.0333 foil / 60 cards = .537\nmythic = 36 packs * 1 / 7.5 * 1.0333 foil / 20 cards = .248",
+    "types": {
+      "mainset_rare": {
+        "rate": 0.537,
+        "regularLabels": {
+          "dmu": {
+            "2": true,
+            "3": true,
+            "15": true,
+            "16": true,
+            "19": true,
+            "24": true,
+            "36": true,
+            "37": true,
+            "38": true,
+            "40": true,
+            "42": true,
+            "46": true,
+            "52": true,
+            "59": true,
+            "65": true,
+            "75": true,
+            "76": true,
+            "84": true,
+            "87": true,
+            "90": true,
+            "91": true,
+            "93": true,
+            "103": true,
+            "106": true,
+            "110": true,
+            "117": true,
+            "119": true,
+            "121": true,
+            "135": true,
+            "141": true,
+            "142": true,
+            "146": true,
+            "147": true,
+            "160": true,
+            "165": true,
+            "167": true,
+            "169": true,
+            "170": true,
+            "175": true,
+            "185": true,
+            "186": true,
+            "194": true,
+            "199": true,
+            "201": true,
+            "202": true,
+            "204": true,
+            "206": true,
+            "209": true,
+            "213": true,
+            "215": true,
+            "221": true,
+            "230": true,
+            "243": true,
+            "244": true,
+            "250": true,
+            "252": true,
+            "255": true,
+            "256": true,
+            "259": true,
+            "261": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "mainset_mythic": {
+        "rate": 0.248,
+        "regularLabels": {
+          "dmu": {
+            "1": true,
+            "32": true,
+            "67": true,
+            "73": true,
+            "97": true,
+            "107": true,
+            "133": true,
+            "143": true,
+            "177": true,
+            "189": true,
+            "192": true,
+            "203": true,
+            "214": true,
+            "218": true,
+            "219": true,
+            "220": true,
+            "228": true,
+            "234": true,
+            "239": true,
+            "242": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "useless_jumpstart": {
+        "rate": 0,
+        "regularLabels": {
+          "dmu": {
+            "282": true,
+            "283": true,
+            "284": true,
+            "285": true,
+            "286": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "uncommon": {
+        "rate": 1.35,
+        "regularLabels": {
+          "dmu": {
+            "236": true
+          }
+        },
+        "foilLabels": {}
+      }
+    }
+  },
+  "neo_draft": {
+    "description": "Default Draft Box:\nrare = 36 packs * 6.5 / 7.5 * 1.0333 foil / 60 cards = .537\nmythic = 36 packs * 1 / 7.5 * 1.0333 foil / 20 cards = .248",
+    "types": {
+      "mainset_rare": {
+        "rate": 0.546,
+        "regularLabels": {
+          "neo": {
+            "7": true,
+            "8": true,
+            "13": true,
+            "21": true,
+            "23": true,
+            "25": true,
+            "26": true,
+            "28": true,
+            "34": true,
+            "57": true,
+            "58": true,
+            "61": true,
+            "62": true,
+            "74": true,
+            "82": true,
+            "86": true,
+            "88": true,
+            "99": true,
+            "101": true,
+            "111": true,
+            "113": true,
+            "122": true,
+            "123": true,
+            "124": true,
+            "141": true,
+            "145": true,
+            "147": true,
+            "153": true,
+            "154": true,
+            "155": true,
+            "159": true,
+            "166": true,
+            "181": true,
+            "193": true,
+            "197": true,
+            "201": true,
+            "206": true,
+            "208": true,
+            "212": true,
+            "213": true,
+            "217": true,
+            "220": true,
+            "222": true,
+            "224": true,
+            "228": true,
+            "232": true,
+            "233": true,
+            "234": true,
+            "235": true,
+            "245": true,
+            "249": true,
+            "250": true,
+            "255": true,
+            "260": true,
+            "266": true,
+            "268": true,
+            "271": true,
+            "276": true,
+            "278": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "mainset_mythic": {
+        "rate": 0.276,
+        "regularLabels": {
+          "neo": {
+            "2": true,
+            "42": true,
+            "59": true,
+            "60": true,
+            "84": true,
+            "89": true,
+            "102": true,
+            "114": true,
+            "134": true,
+            "140": true,
+            "194": true,
+            "199": true,
+            "200": true,
+            "221": true,
+            "226": true,
+            "227": true,
+            "237": true,
+            "238": true
+          }
+        },
+        "foilLabels": {}
+      }
+    }
+  },
+  "bro_draft": {
+    "description": "Default Draft Box:\nrare = 36 packs * 6.5 / 7.5 * 1.0333 foil / 63 cards = .504\nmythic = 36 packs * 1 / 7.5 * 1.0333 foil / 23 cards = .248\nartifact_rare = 36 packs * 5/6 * .27 * 1.0333 foil / 30 cards = .279\nartifact_mythic = 36 packs * 5/6 * .07 * 1.0333 foil / 15 cards = .145\nschematic_rare = 36 packs * 1/6 * .27 * 1.0333 foil / 30 cards = .056\nschematic_mythic= 36 packs * 1/6 * .07 * 1.0333 foil / 15 cards = .029",
+    "types": {
+      "mainset_rare": {
+        "rate": 0.512,
+        "regularLabels": {
+          "bro": {
+            "9": true,
+            "10": true,
+            "12": true,
+            "25": true,
+            "26": true,
+            "30": true,
+            "34": true,
+            "38": true,
+            "47": true,
+            "51": true,
+            "52": true,
+            "62": true,
+            "70": true,
+            "82": true,
+            "83": true,
+            "84": true,
+            "89": true,
+            "94": true,
+            "97": true,
+            "99": true,
+            "105": true,
+            "107": true,
+            "111": true,
+            "122": true,
+            "125": true,
+            "128": true,
+            "135": true,
+            "139": true,
+            "141": true,
+            "146": true,
+            "154": true,
+            "156": true,
+            "177": true,
+            "179": true,
+            "185": true,
+            "192": true,
+            "194": true,
+            "202": true,
+            "205": true,
+            "208": true,
+            "211": true,
+            "212": true,
+            "215": true,
+            "217": true,
+            "218": true,
+            "222": true,
+            "224": true,
+            "226": true,
+            "237": true,
+            "245": true,
+            "247": true,
+            "254": true,
+            "257": true,
+            "258": true,
+            "259": true,
+            "262": true,
+            "263": true,
+            "264": true,
+            "265": true,
+            "267": true,
+            "238a": true,
+            "163a": true,
+            "256a": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "mainset_mythic": {
+        "rate": 0.216,
+        "regularLabels": {
+          "bro": {
+            "8": true,
+            "18": true,
+            "36": true,
+            "40": true,
+            "59": true,
+            "66": true,
+            "75": true,
+            "81": true,
+            "95": true,
+            "121": true,
+            "130": true,
+            "165": true,
+            "170": true,
+            "193": true,
+            "203": true,
+            "216": true,
+            "219": true,
+            "220": true,
+            "225": true,
+            "229": true,
+            "230": true,
+            "233": true,
+            "240": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "artifact_rare": {
+        "rate": 0.279,
+        "regularLabels": {
+          "brr": {
+            "1": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "10": true,
+            "12": true,
+            "13": true,
+            "14": true,
+            "17": true,
+            "18": true,
+            "20": true,
+            "22": true,
+            "25": true,
+            "26": true,
+            "27": true,
+            "29": true,
+            "30": true,
+            "40": true,
+            "42": true,
+            "44": true,
+            "45": true,
+            "46": true,
+            "48": true,
+            "49": true,
+            "50": true,
+            "52": true,
+            "59": true,
+            "60": true,
+            "61": true,
+            "62": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "artifact_mythic": {
+        "rate": 0.145,
+        "regularLabels": {
+          "brr": {
+            "2": true,
+            "3": true,
+            "9": true,
+            "19": true,
+            "31": true,
+            "33": true,
+            "35": true,
+            "36": true,
+            "38": true,
+            "39": true,
+            "41": true,
+            "47": true,
+            "56": true,
+            "57": true,
+            "63": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "schematic_rare": {
+        "rate": 0.056,
+        "regularLabels": {
+          "brr": {
+            "64": true,
+            "67": true,
+            "68": true,
+            "69": true,
+            "73": true,
+            "75": true,
+            "76": true,
+            "77": true,
+            "80": true,
+            "81": true,
+            "83": true,
+            "85": true,
+            "88": true,
+            "89": true,
+            "90": true,
+            "92": true,
+            "93": true,
+            "103": true,
+            "105": true,
+            "107": true,
+            "108": true,
+            "109": true,
+            "111": true,
+            "112": true,
+            "113": true,
+            "115": true,
+            "122": true,
+            "123": true,
+            "124": true,
+            "125": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "schematic_mythic": {
+        "rate": 0.029,
+        "regularLabels": {
+          "brr": {
+            "65": true,
+            "66": true,
+            "72": true,
+            "82": true,
+            "94": true,
+            "96": true,
+            "98": true,
+            "99": true,
+            "101": true,
+            "102": true,
+            "104": true,
+            "110": true,
+            "119": true,
+            "120": true,
+            "126": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "other": {
+        "rate": 0,
+        "regularLabels": {
+          "bro": {
+            "288": true,
+            "289": true,
+            "290": true,
+            "291": true,
+            "292": true
+          }
+        },
+        "foilLabels": {}
+      }
+    }
+  },
+  "snc_draft": {
+    "description": "Default Draft Box:\nrare = 36 packs * 6.5 / 7.5 * 1.0333 foil / 60 cards = .537\nmythic = 36 packs * 1 / 7.5 * 1.0333 foil / 20 cards = .248",
+    "types": {
+      "mainset_rare": {
+        "rate": 0.537,
+        "regularLabels": {
+          "snc": {
+            "10": true,
+            "12": true,
+            "14": true,
+            "22": true,
+            "24": true,
+            "38": true,
+            "41": true,
+            "46": true,
+            "56": true,
+            "63": true,
+            "65": true,
+            "69": true,
+            "72": true,
+            "93": true,
+            "94": true,
+            "95": true,
+            "97": true,
+            "105": true,
+            "109": true,
+            "112": true,
+            "116": true,
+            "126": true,
+            "130": true,
+            "144": true,
+            "145": true,
+            "148": true,
+            "160": true,
+            "165": true,
+            "166": true,
+            "167": true,
+            "170": true,
+            "172": true,
+            "179": true,
+            "183": true,
+            "184": true,
+            "188": true,
+            "191": true,
+            "192": true,
+            "195": true,
+            "198": true,
+            "200": true,
+            "207": true,
+            "209": true,
+            "210": true,
+            "211": true,
+            "215": true,
+            "216": true,
+            "219": true,
+            "223": true,
+            "228": true,
+            "229": true,
+            "230": true,
+            "232": true,
+            "237": true,
+            "246": true,
+            "250": true,
+            "254": true,
+            "257": true,
+            "260": true,
+            "261": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "mainset_mythic": {
+        "rate": 0.248,
+        "regularLabels": {
+          "snc": {
+            "11": true,
+            "15": true,
+            "30": true,
+            "34": true,
+            "42": true,
+            "67": true,
+            "68": true,
+            "101": true,
+            "129": true,
+            "134": true,
+            "159": true,
+            "162": true,
+            "186": true,
+            "193": true,
+            "197": true,
+            "202": true,
+            "206": true,
+            "213": true,
+            "231": true,
+            "240": true
+          }
+        },
+        "foilLabels": {}
+      }
+    }
+  },
+  "mid_draft": {
+    "description": "Default Draft Box:\nrare = 36 packs * 6.5 / 7.5 * 1.0333 foil / 64 cards = .504\nmythic = 36 packs * 1 / 7.5 * 1.0333 foil / 20 cards = .248",
+    "types": {
+      "mainset_rare": {
+        "rate": 0.504,
+        "regularLabels": {
+          "mid": {
+            "1": true,
+            "7": true,
+            "15": true,
+            "18": true,
+            "33": true,
+            "37": true,
+            "41": true,
+            "46": true,
+            "57": true,
+            "61": true,
+            "62": true,
+            "69": true,
+            "76": true,
+            "80": true,
+            "81": true,
+            "89": true,
+            "91": true,
+            "94": true,
+            "103": true,
+            "104": true,
+            "108": true,
+            "111": true,
+            "122": true,
+            "131": true,
+            "134": true,
+            "137": true,
+            "142": true,
+            "146": true,
+            "157": true,
+            "159": true,
+            "168": true,
+            "172": true,
+            "197": true,
+            "200": true,
+            "204": true,
+            "206": true,
+            "207": true,
+            "209": true,
+            "213": true,
+            "215": true,
+            "217": true,
+            "219": true,
+            "223": true,
+            "224": true,
+            "225": true,
+            "227": true,
+            "230": true,
+            "232": true,
+            "233": true,
+            "234": true,
+            "235": true,
+            "236": true,
+            "241": true,
+            "242": true,
+            "246": true,
+            "248": true,
+            "250": true,
+            "252": true,
+            "257": true,
+            "260": true,
+            "263": true,
+            "265": true,
+            "266": true,
+            "267": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "mainset_mythic": {
+        "rate": 0.248,
+        "regularLabels": {
+          "mid": {
+            "17": true,
+            "25": true,
+            "34": true,
+            "59": true,
+            "71": true,
+            "77": true,
+            "109": true,
+            "110": true,
+            "112": true,
+            "124": true,
+            "129": true,
+            "149": true,
+            "162": true,
+            "177": true,
+            "194": true,
+            "208": true,
+            "211": true,
+            "240": true,
+            "245": true,
+            "264": true
+          }
+        },
+        "foilLabels": {}
+      }
+    }
+  },
+  "vow_draft": {
+    "description": "Default Draft Box:\nrare = 36 packs * 6.5 / 7.5 * 1.0333 foil / 64 cards = .504\nmythic = 36 packs * 1 / 7.5 * 1.0333 foil / 20 cards = .248",
+    "types": {
+      "mainset_rare": {
+        "rate": 0.504,
+        "regularLabels": {
+          "mid": {},
+          "vow": {
+            "5": true,
+            "20": true,
+            "21": true,
+            "23": true,
+            "36": true,
+            "38": true,
+            "44": true,
+            "45": true,
+            "46": true,
+            "53": true,
+            "58": true,
+            "61": true,
+            "63": true,
+            "64": true,
+            "68": true,
+            "71": true,
+            "72": true,
+            "89": true,
+            "98": true,
+            "101": true,
+            "103": true,
+            "108": true,
+            "109": true,
+            "111": true,
+            "115": true,
+            "118": true,
+            "124": true,
+            "137": true,
+            "140": true,
+            "150": true,
+            "151": true,
+            "152": true,
+            "154": true,
+            "162": true,
+            "165": true,
+            "172": true,
+            "178": true,
+            "186": true,
+            "197": true,
+            "200": true,
+            "201": true,
+            "202": true,
+            "204": true,
+            "205": true,
+            "221": true,
+            "225": true,
+            "231": true,
+            "235": true,
+            "236": true,
+            "237": true,
+            "238": true,
+            "239": true,
+            "243": true,
+            "244": true,
+            "246": true,
+            "249": true,
+            "255": true,
+            "258": true,
+            "261": true,
+            "262": true,
+            "264": true,
+            "265": true,
+            "266": true,
+            "267": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "mainset_mythic": {
+        "rate": 0.248,
+        "regularLabels": {
+          "mid": {},
+          "vow": {
+            "6": true,
+            "12": true,
+            "17": true,
+            "34": true,
+            "50": true,
+            "65": true,
+            "70": true,
+            "100": true,
+            "119": true,
+            "131": true,
+            "132": true,
+            "148": true,
+            "149": true,
+            "170": true,
+            "181": true,
+            "187": true,
+            "191": true,
+            "195": true,
+            "240": true,
+            "245": true
+          }
+        },
+        "foilLabels": {}
+      }
+    }
+  },
+  "jumpstart_22": {
+    "description": "1x = 1/121 * 24",
+    "types": {
+      "rare_1x": {
+        "rate": 0.198,
+        "regularLabels": {
+          "j22": {
+            "6": true,
+            "12": true,
+            "16": true,
+            "19": true,
+            "28": true,
+            "30": true,
+            "40": true,
+            "53": true,
+            "75": true,
+            "79": true,
+            "93": true,
+            "97": true,
+            "114": true,
+            "124": true,
+            "141": true,
+            "169": true,
+            "184": true,
+            "208": true,
+            "210": true,
+            "234": true,
+            "239": true,
+            "261": true,
+            "320": true,
+            "347": true,
+            "356": true,
+            "358": true,
+            "413": true,
+            "423": true,
+            "441": true,
+            "452": true,
+            "453": true,
+            "463": true,
+            "487": true,
+            "511": true,
+            "545": true,
+            "550": true,
+            "564": true,
+            "566": true,
+            "575": true,
+            "581": true,
+            "629": true,
+            "668": true,
+            "712": true,
+            "719": true,
+            "743": true,
+            "772": true,
+            "788": true,
+            "801": true,
+            "806": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "rare_2x": {
+        "rate": 0.397,
+        "regularLabels": {
+          "j22": {
+            "1": true,
+            "8": true,
+            "9": true,
+            "13": true,
+            "25": true,
+            "29": true,
+            "31": true,
+            "38": true,
+            "44": true,
+            "47": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "good_bulk_1x": {
+        "rate": 0.198,
+        "regularLabels": {
+          "j22": {
+            "62": true,
+            "73": true,
+            "74": true,
+            "94": true,
+            "125": true,
+            "765": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "good_bulk_2x": {
+        "rate": 0.397,
+        "regularLabels": {
+          "j22": {
+            "54": true,
+            "65": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "good_bulk_8x": {
+        "rate": 1.597,
+        "regularLabels": {
+          "j22": {
+            "21": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "good_bulk_4x": {
+        "rate": 0.793,
+        "regularLabels": {
+          "j22": {
+            "42": true,
+            "64": true
+          }
+        },
+        "foilLabels": {}
+      }
+    }
+  },
+  "jumpstart_21": {
+    "description": "1x - 1/121 * 24",
+    "types": {
+      "rare_1x": {
+        "rate": 0.198,
+        "regularLabels": {
+          "jmp": {
+            "3": true,
+            "10": true,
+            "17": true,
+            "18": true,
+            "20": true,
+            "28": true,
+            "31": true,
+            "86": true,
+            "96": true,
+            "113": true,
+            "116": true,
+            "119": true,
+            "130": true,
+            "154": true,
+            "187": true,
+            "204": true,
+            "231": true,
+            "236": true,
+            "243": true,
+            "271": true,
+            "278": true,
+            "324": true,
+            "339": true,
+            "340": true,
+            "385": true,
+            "391": true,
+            "410": true,
+            "415": true,
+            "423": true,
+            "429": true,
+            "432": true,
+            "439": true,
+            "482": true,
+            "493": true
+          },
+          "m21": {
+            "6": true,
+            "7": true,
+            "75": true,
+            "76": true,
+            "108": true,
+            "133": true,
+            "136": true,
+            "146": true,
+            "164": true,
+            "183": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "rare_2x": {
+        "rate": 0.397,
+        "regularLabels": {
+          "jmp": {
+            "1": true,
+            "24": true,
+            "29": true,
+            "30": true,
+            "95": true,
+            "169": true,
+            "270": true,
+            "399": true
+          },
+          "m21": {
+            "38": true,
+            "127": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "good_bulk_1x": {
+        "rate": 0.198,
+        "regularLabels": {
+          "jmp": {
+            "41": true,
+            "45": true,
+            "58": true,
+            "78": true,
+            "127": true,
+            "144": true,
+            "148": true,
+            "151": true,
+            "206": true,
+            "216": true,
+            "230": true,
+            "267": true,
+            "302": true,
+            "312": true,
+            "342": true,
+            "469": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "outsider": {
+        "rate": 0,
+        "regularLabels": {
+          "m21": {
+            "1": true,
+            "27": true,
+            "48": true,
+            "57": true,
+            "69": true,
+            "74": true,
+            "103": true,
+            "104": true,
+            "114": true,
+            "116": true,
+            "117": true,
+            "120": true,
+            "139": true,
+            "143": true,
+            "173": true,
+            "179": true,
+            "188": true,
+            "219": true,
+            "224": true,
+            "225": true,
+            "228": true,
+            "239": true,
+            "242": true,
+            "246": true,
+            "278": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "3x": {
+        "rate": 0.595,
+        "regularLabels": {
+          "m21": {
+            "186": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "4x": {
+        "rate": 0.793,
+        "regularLabels": {
+          "m21": {
+            "177": true
+          }
+        },
+        "foilLabels": {}
+      }
+    }
+  },
+  "znr_draft": {
+    "description": "Default Draft Box:\nrare = 36 packs * 6.4 / 7.4 * 1.0333 foil / 64 cards = .537\nmythic = 36 packs * 1 / 7.4 * 1.0333 foil / 20 cards = .251",
+    "types": {
+      "mainset_rare": {
+        "rate": 0.503,
+        "regularLabels": {
+          "znr": {
+            "4": true,
+            "5": true,
+            "16": true,
+            "23": true,
+            "24": true,
+            "27": true,
+            "30": true,
+            "39": true,
+            "41": true,
+            "49": true,
+            "53": true,
+            "54": true,
+            "60": true,
+            "61": true,
+            "67": true,
+            "68": true,
+            "72": true,
+            "85": true,
+            "95": true,
+            "106": true,
+            "108": true,
+            "115": true,
+            "118": true,
+            "124": true,
+            "125": true,
+            "127": true,
+            "129": true,
+            "145": true,
+            "148": true,
+            "151": true,
+            "153": true,
+            "156": true,
+            "159": true,
+            "174": true,
+            "175": true,
+            "176": true,
+            "183": true,
+            "186": true,
+            "189": true,
+            "193": true,
+            "198": true,
+            "203": true,
+            "207": true,
+            "209": true,
+            "220": true,
+            "223": true,
+            "225": true,
+            "226": true,
+            "233": true,
+            "234": true,
+            "239": true,
+            "240": true,
+            "241": true,
+            "242": true,
+            "246": true,
+            "252": true,
+            "258": true,
+            "259": true,
+            "260": true,
+            "261": true,
+            "262": true,
+            "263": true,
+            "264": true,
+            "265": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "mainset_mythic": {
+        "rate": 0.251,
+        "regularLabels": {
+          "znr": {
+            "2": true,
+            "12": true,
+            "44": true,
+            "63": true,
+            "76": true,
+            "77": true,
+            "90": true,
+            "98": true,
+            "122": true,
+            "147": true,
+            "150": true,
+            "161": true,
+            "178": true,
+            "179": true,
+            "215": true,
+            "230": true,
+            "231": true,
+            "232": true,
+            "244": true,
+            "245": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "uncommon": {
+        "rate": 1.35,
+        "regularLabels": {
+          "znr": {
+            "37": true,
+            "75": true,
+            "111": true,
+            "166": true,
+            "180": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "box topper": {
+        "rate": 0.0333,
+        "regularLabels": {
+          "zne": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true,
+            "10": true,
+            "11": true,
+            "12": true,
+            "13": true,
+            "14": true,
+            "15": true,
+            "16": true,
+            "17": true,
+            "18": true,
+            "19": true,
+            "20": true,
+            "21": true,
+            "22": true,
+            "23": true,
+            "24": true,
+            "25": true,
+            "26": true,
+            "27": true,
+            "28": true,
+            "29": true,
+            "30": true
+          }
+        },
+        "foilLabels": {}
+      }
+    }
+  },
+  "mh2_draft": {
+    "description": "Draft Box:\nHolo rare 10%\nHolo reprint 4.5%\nRare rate 6.5/7.5 * 1.0333\nMythic 1/7.5 * 1.0333\nRare reprint .3 * 7/8 * 1.015\nMythic reprint .3 * 1/ 8 * 1.015\n\nrare = 36 packs * 6.5 / 7.5 * 1.0333 foil / 60 cards = .537\nmythic = 36 packs * 1 / 7.5 * 1.0333 foil / 20 cards = .248",
+    "types": {
+      "mainset_rare": {
+        "rate": 0.537,
+        "regularLabels": {
+          "mh2": {
+            "12": true,
+            "22": true,
+            "23": true,
+            "26": true,
+            "27": true,
+            "29": true,
+            "35": true,
+            "39": true,
+            "44": true,
+            "47": true,
+            "58": true,
+            "59": true,
+            "68": true,
+            "71": true,
+            "80": true,
+            "81": true,
+            "92": true,
+            "93": true,
+            "96": true,
+            "97": true,
+            "106": true,
+            "116": true,
+            "117": true,
+            "118": true,
+            "120": true,
+            "129": true,
+            "132": true,
+            "137": true,
+            "148": true,
+            "153": true,
+            "162": true,
+            "166": true,
+            "171": true,
+            "176": true,
+            "182": true,
+            "186": true,
+            "189": true,
+            "198": true,
+            "204": true,
+            "205": true,
+            "206": true,
+            "207": true,
+            "208": true,
+            "214": true,
+            "216": true,
+            "218": true,
+            "219": true,
+            "224": true,
+            "225": true,
+            "231": true,
+            "236": true,
+            "242": true,
+            "243": true,
+            "244": true,
+            "248": true,
+            "250": true,
+            "254": true,
+            "259": true,
+            "260": true,
+            "261": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "mainset_mythic": {
+        "rate": 0.248,
+        "regularLabels": {
+          "mh2": {
+            "30": true,
+            "32": true,
+            "52": true,
+            "67": true,
+            "69": true,
+            "75": true,
+            "87": true,
+            "102": true,
+            "126": true,
+            "138": true,
+            "151": true,
+            "157": true,
+            "178": true,
+            "192": true,
+            "197": true,
+            "199": true,
+            "202": true,
+            "227": true,
+            "234": true,
+            "238": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "reprint_rare": {
+        "rate": 0.537,
+        "regularLabels": {
+          "mh2": {
+            "263": true,
+            "265": true,
+            "270": true,
+            "271": true,
+            "273": true,
+            "275": true,
+            "277": true,
+            "279": true,
+            "283": true,
+            "286": true,
+            "289": true,
+            "290": true,
+            "292": true,
+            "293": true,
+            "294": true,
+            "295": true,
+            "298": true,
+            "303": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "reprint_mythic": {
+        "rate": 0.248,
+        "regularLabels": {
+          "mh2": {
+            "281": true,
+            "287": true,
+            "291": true,
+            "301": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "uncommon": {
+        "rate": 1.35,
+        "regularLabels": {
+          "mh2": {
+            "121": true,
+            "180": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "reprint_uncommon": {
+        "rate": 1.18,
+        "regularLabels": {
+          "mh2": {
+            "267": true
+          }
+        },
+        "foilLabels": {}
+      },
+      "other": {
+        "rate": 0,
+        "regularLabels": {
+          "mh2": {
+            "491": true
+          }
+        },
+        "foilLabels": {}
+      }
+    }
+  }
+}

@@ -506,7 +506,7 @@
   "neo,211": {
     "set": "neo",
     "number": 211,
-    "foilQty": 0,
+    "foilQty": 1,
     "regQty": 1
   },
   "mh2,12": {
@@ -693,7 +693,7 @@
     "set": "dmu",
     "number": 87,
     "foilQty": 0,
-    "regQty": 1
+    "regQty": 3
   },
   "dmu,75": {
     "set": "dmu",
@@ -729,7 +729,7 @@
     "set": "dmu",
     "number": 175,
     "foilQty": 1,
-    "regQty": 1
+    "regQty": 2
   },
   "dmu,73": {
     "set": "dmu",
@@ -741,7 +741,7 @@
     "set": "dmu",
     "number": 67,
     "foilQty": 0,
-    "regQty": 1
+    "regQty": 2
   },
   "dmu,220": {
     "set": "dmu",
@@ -765,7 +765,7 @@
     "set": "dmu",
     "number": 16,
     "foilQty": 0,
-    "regQty": 1
+    "regQty": 2
   },
   "dmu,39": {
     "set": "dmu",
@@ -819,19 +819,19 @@
     "set": "dmu",
     "number": 3,
     "foilQty": 0,
-    "regQty": 2
+    "regQty": 3
   },
   "dmu,177": {
     "set": "dmu",
     "number": 177,
     "foilQty": 0,
-    "regQty": 1
+    "regQty": 2
   },
   "dmu,143": {
     "set": "dmu",
     "number": 143,
     "foilQty": 0,
-    "regQty": 1
+    "regQty": 2
   },
   "dmu,201": {
     "set": "dmu",
@@ -910,12 +910,6 @@
     "number": 97,
     "foilQty": 0,
     "regQty": 0
-  },
-  "mh2,401": {
-    "set": "mh2",
-    "number": 401,
-    "foilQty": 0,
-    "regQty": 1
   },
   "mh2,178": {
     "set": "mh2",
@@ -1149,13 +1143,13 @@
     "set": "jmp",
     "number": 303,
     "foilQty": 0,
-    "regQty": 1
+    "regQty": 2
   },
   "jmp,313": {
     "set": "jmp",
     "number": 313,
     "foilQty": 0,
-    "regQty": 1
+    "regQty": 2
   },
   "jmp,167": {
     "set": "jmp",
@@ -2300,7 +2294,7 @@
   "neo,300": {
     "set": "neo",
     "number": 300,
-    "foilQty": 1,
+    "foilQty": 2,
     "regQty": 0
   },
   "neo,299": {
@@ -2313,7 +2307,7 @@
     "set": "neo",
     "number": 296,
     "foilQty": 0,
-    "regQty": 1
+    "regQty": 3
   },
   "neo,293": {
     "set": "neo",
@@ -2511,31 +2505,31 @@
     "set": "dmu",
     "number": 277,
     "foilQty": 0,
-    "regQty": 1
+    "regQty": 4
   },
   "dmu,278": {
     "set": "dmu",
     "number": 278,
     "foilQty": 1,
-    "regQty": 2
+    "regQty": 6
   },
   "dmu,279": {
     "set": "dmu",
     "number": 279,
     "foilQty": 0,
-    "regQty": 1
+    "regQty": 4
   },
   "dmu,280": {
     "set": "dmu",
     "number": 280,
     "foilQty": 1,
-    "regQty": 2
+    "regQty": 7
   },
   "dmu,281": {
     "set": "dmu",
     "number": 281,
     "foilQty": 1,
-    "regQty": 2
+    "regQty": 5
   },
   "bfz,272": {
     "set": "bfz",
@@ -2654,6 +2648,1116 @@
   "brr,22": {
     "set": "brr",
     "number": 22,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bro,378": {
+    "set": "bro",
+    "number": 378,
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "bro,83": {
+    "set": "bro",
+    "number": 83,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bro,84": {
+    "set": "bro",
+    "number": 84,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "tsp,32": {
+    "set": "tsp",
+    "number": 32,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "brr,124": {
+    "set": "brr",
+    "number": 124,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bot,7": {
+    "set": "bot",
+    "number": 7,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bro,215": {
+    "set": "bro",
+    "number": 215,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bro,177": {
+    "set": "bro",
+    "number": 177,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bro,290": {
+    "set": "bro",
+    "number": 290,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "m19,128": {
+    "set": "m19",
+    "number": 128,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "brr,61": {
+    "set": "brr",
+    "number": 61,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bro,154": {
+    "set": "bro",
+    "number": 154,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bro,280": {
+    "set": "bro",
+    "number": 280,
+    "foilQty": 1,
+    "regQty": 1
+  },
+  "bro,51": {
+    "set": "bro",
+    "number": 51,
+    "foilQty": 1,
+    "regQty": 1
+  },
+  "bro,237": {
+    "set": "bro",
+    "number": 237,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "afr,81": {
+    "set": "afr",
+    "number": 81,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bro,105": {
+    "set": "bro",
+    "number": 105,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bro,296": {
+    "set": "bro",
+    "number": 296,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "neo,89": {
+    "set": "neo",
+    "number": 89,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bro,205": {
+    "set": "bro",
+    "number": 205,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bot,2": {
+    "set": "bot",
+    "number": 2,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bro,82": {
+    "set": "bro",
+    "number": 82,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bro,125": {
+    "set": "bro",
+    "number": 125,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "jmp,415": {
+    "set": "jmp",
+    "number": 415,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "jmp,116": {
+    "set": "jmp",
+    "number": 116,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "m21,110": {
+    "set": "m21",
+    "number": 110,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bot,15": {
+    "set": "bot",
+    "number": 15,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bro,97": {
+    "set": "bro",
+    "number": 97,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "brr,5": {
+    "set": "brr",
+    "number": 5,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bro,163a": {
+    "set": "bro",
+    "number": "163a",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bro,263": {
+    "set": "bro",
+    "number": "263",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "brr,26": {
+    "set": "brr",
+    "number": "26",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "brr,29": {
+    "set": "brr",
+    "number": "29",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "aer,32": {
+    "set": "aer",
+    "number": "32",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bro,211": {
+    "set": "bro",
+    "number": "211",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bro,179": {
+    "set": "bro",
+    "number": "179",
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "brr,97": {
+    "set": "brr",
+    "number": "97",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "vow,1": {
+    "set": "vow",
+    "number": "1",
+    "foilQty": 2,
+    "regQty": 1
+  },
+  "vow,10": {
+    "set": "vow",
+    "number": "10",
+    "foilQty": 1,
+    "regQty": 2
+  },
+  "vow,11": {
+    "set": "vow",
+    "number": "11",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "vow,15": {
+    "set": "vow",
+    "number": "15",
+    "foilQty": 1,
+    "regQty": 2
+  },
+  "vow,18": {
+    "set": "vow",
+    "number": "18",
+    "foilQty": 1,
+    "regQty": 2
+  },
+  "vow,19": {
+    "set": "vow",
+    "number": "19",
+    "foilQty": 1,
+    "regQty": 1
+  },
+  "vow,22": {
+    "set": "vow",
+    "number": "22",
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "vow,24": {
+    "set": "vow",
+    "number": "24",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "vow,25": {
+    "set": "vow",
+    "number": "25",
+    "foilQty": 1,
+    "regQty": 2
+  },
+  "vow,29": {
+    "set": "vow",
+    "number": "29",
+    "foilQty": 0,
+    "regQty": 3
+  },
+  "vow,30": {
+    "set": "vow",
+    "number": "30",
+    "foilQty": 0,
+    "regQty": 2
+  },
+  "vow,33": {
+    "set": "vow",
+    "number": "33",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "vow,35": {
+    "set": "vow",
+    "number": "35",
+    "foilQty": 3,
+    "regQty": 1
+  },
+  "vow,37": {
+    "set": "vow",
+    "number": "37",
+    "foilQty": 0,
+    "regQty": 2
+  },
+  "vow,39": {
+    "set": "vow",
+    "number": "39",
+    "foilQty": 0,
+    "regQty": 2
+  },
+  "vow,41": {
+    "set": "vow",
+    "number": "41",
+    "foilQty": 1,
+    "regQty": 2
+  },
+  "vow,43": {
+    "set": "vow",
+    "number": "43",
+    "foilQty": 1,
+    "regQty": 2
+  },
+  "vow,47": {
+    "set": "vow",
+    "number": "47",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "vow,48": {
+    "set": "vow",
+    "number": "48",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "vow,51": {
+    "set": "vow",
+    "number": "51",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "vow,54": {
+    "set": "vow",
+    "number": "54",
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "vow,55": {
+    "set": "vow",
+    "number": "55",
+    "foilQty": 2,
+    "regQty": 1
+  },
+  "vow,57": {
+    "set": "vow",
+    "number": "57",
+    "foilQty": 3,
+    "regQty": 3
+  },
+  "vow,66": {
+    "set": "vow",
+    "number": "66",
+    "foilQty": 1,
+    "regQty": 2
+  },
+  "vow,73": {
+    "set": "vow",
+    "number": "73",
+    "foilQty": 0,
+    "regQty": 2
+  },
+  "vow,76": {
+    "set": "vow",
+    "number": "76",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "vow,77": {
+    "set": "vow",
+    "number": "77",
+    "foilQty": 0,
+    "regQty": 2
+  },
+  "vow,78": {
+    "set": "vow",
+    "number": "78",
+    "foilQty": 2,
+    "regQty": 2
+  },
+  "vow,80": {
+    "set": "vow",
+    "number": "80",
+    "foilQty": 1,
+    "regQty": 1
+  },
+  "vow,81": {
+    "set": "vow",
+    "number": "81",
+    "foilQty": 0,
+    "regQty": 3
+  },
+  "vow,83": {
+    "set": "vow",
+    "number": "83",
+    "foilQty": 1,
+    "regQty": 2
+  },
+  "vow,84": {
+    "set": "vow",
+    "number": "84",
+    "foilQty": 1,
+    "regQty": 1
+  },
+  "vow,86": {
+    "set": "vow",
+    "number": "86",
+    "foilQty": 1,
+    "regQty": 1
+  },
+  "vow,91": {
+    "set": "vow",
+    "number": "91",
+    "foilQty": 0,
+    "regQty": 3
+  },
+  "vow,92": {
+    "set": "vow",
+    "number": "92",
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "vow,94": {
+    "set": "vow",
+    "number": "94",
+    "foilQty": 3,
+    "regQty": 1
+  },
+  "vow,102": {
+    "set": "vow",
+    "number": "102",
+    "foilQty": 0,
+    "regQty": 2
+  },
+  "vow,104": {
+    "set": "vow",
+    "number": "104",
+    "foilQty": 0,
+    "regQty": 4
+  },
+  "vow,105": {
+    "set": "vow",
+    "number": "105",
+    "foilQty": 2,
+    "regQty": 0
+  },
+  "vow,106": {
+    "set": "vow",
+    "number": "106",
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "vow,116": {
+    "set": "vow",
+    "number": "116",
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "vow,127": {
+    "set": "vow",
+    "number": "127",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "vow,129": {
+    "set": "vow",
+    "number": "129",
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "vow,136": {
+    "set": "vow",
+    "number": "136",
+    "foilQty": 2,
+    "regQty": 0
+  },
+  "vow,139": {
+    "set": "vow",
+    "number": "139",
+    "foilQty": 0,
+    "regQty": 2
+  },
+  "vow,142": {
+    "set": "vow",
+    "number": "142",
+    "foilQty": 0,
+    "regQty": 2
+  },
+  "vow,146": {
+    "set": "vow",
+    "number": "146",
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "vow,147": {
+    "set": "vow",
+    "number": "147",
+    "foilQty": 3,
+    "regQty": 1
+  },
+  "vow,153": {
+    "set": "vow",
+    "number": "153",
+    "foilQty": 1,
+    "regQty": 1
+  },
+  "vow,155": {
+    "set": "vow",
+    "number": "155",
+    "foilQty": 0,
+    "regQty": 2
+  },
+  "vow,156": {
+    "set": "vow",
+    "number": "156",
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "vow,157": {
+    "set": "vow",
+    "number": "157",
+    "foilQty": 1,
+    "regQty": 1
+  },
+  "vow,158": {
+    "set": "vow",
+    "number": "158",
+    "foilQty": 0,
+    "regQty": 4
+  },
+  "vow,164": {
+    "set": "vow",
+    "number": "164",
+    "foilQty": 1,
+    "regQty": 2
+  },
+  "vow,166": {
+    "set": "vow",
+    "number": "166",
+    "foilQty": 1,
+    "regQty": 2
+  },
+  "vow,173": {
+    "set": "vow",
+    "number": "173",
+    "foilQty": 1,
+    "regQty": 4
+  },
+  "vow,174": {
+    "set": "vow",
+    "number": "174",
+    "foilQty": 0,
+    "regQty": 4
+  },
+  "vow,179": {
+    "set": "vow",
+    "number": "179",
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "vow,180": {
+    "set": "vow",
+    "number": "180",
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "vow,182": {
+    "set": "vow",
+    "number": "182",
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "vow,184": {
+    "set": "vow",
+    "number": "184",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "vow,188": {
+    "set": "vow",
+    "number": "188",
+    "foilQty": 1,
+    "regQty": 1
+  },
+  "vow,196": {
+    "set": "vow",
+    "number": "196",
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "vow,203": {
+    "set": "vow",
+    "number": "203",
+    "foilQty": 3,
+    "regQty": 3
+  },
+  "vow,208": {
+    "set": "vow",
+    "number": "208",
+    "foilQty": 3,
+    "regQty": 2
+  },
+  "vow,209": {
+    "set": "vow",
+    "number": "209",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "vow,210": {
+    "set": "vow",
+    "number": "210",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "vow,211": {
+    "set": "vow",
+    "number": "211",
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "vow,216": {
+    "set": "vow",
+    "number": "216",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "vow,219": {
+    "set": "vow",
+    "number": "219",
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "vow,222": {
+    "set": "vow",
+    "number": "222",
+    "foilQty": 2,
+    "regQty": 1
+  },
+  "vow,223": {
+    "set": "vow",
+    "number": "223",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "vow,224": {
+    "set": "vow",
+    "number": "224",
+    "foilQty": 0,
+    "regQty": 2
+  },
+  "vow,226": {
+    "set": "vow",
+    "number": "226",
+    "foilQty": 1,
+    "regQty": 2
+  },
+  "vow,227": {
+    "set": "vow",
+    "number": "227",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "vow,228": {
+    "set": "vow",
+    "number": "228",
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "vow,233": {
+    "set": "vow",
+    "number": "233",
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "vow,252": {
+    "set": "vow",
+    "number": "252",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "vow,254": {
+    "set": "vow",
+    "number": "254",
+    "foilQty": 1,
+    "regQty": 1
+  },
+  "vow,257": {
+    "set": "vow",
+    "number": "257",
+    "foilQty": 1,
+    "regQty": 2
+  },
+  "vow,260": {
+    "set": "vow",
+    "number": "260",
+    "foilQty": 1,
+    "regQty": 2
+  },
+  "vow,286": {
+    "set": "vow",
+    "number": "286",
+    "foilQty": 1,
+    "regQty": 7
+  },
+  "vow,288": {
+    "set": "vow",
+    "number": "288",
+    "foilQty": 2,
+    "regQty": 6
+  },
+  "vow,292": {
+    "set": "vow",
+    "number": "292",
+    "foilQty": 0,
+    "regQty": 8
+  },
+  "vow,301": {
+    "set": "vow",
+    "number": "301",
+    "foilQty": 1,
+    "regQty": 5
+  },
+  "vow,303": {
+    "set": "vow",
+    "number": "303",
+    "foilQty": 0,
+    "regQty": 5
+  },
+  "vow,306": {
+    "set": "vow",
+    "number": "306",
+    "foilQty": 2,
+    "regQty": 5
+  },
+  "vow,308": {
+    "set": "vow",
+    "number": "308",
+    "foilQty": 3,
+    "regQty": 6
+  },
+  "brr,30": {
+    "set": "brr",
+    "number": 30,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "brr,58": {
+    "set": "brr",
+    "number": 58,
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "bro,52": {
+    "set": "bro",
+    "number": 52,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bro,122": {
+    "set": "bro",
+    "number": 122,
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "dmu,80": {
+    "set": "dmu",
+    "number": "80",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "dmu,85": {
+    "set": "dmu",
+    "number": "85",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "dmu,96": {
+    "set": "dmu",
+    "number": "96",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bro,219": {
+    "set": "bro",
+    "number": "219",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bro,38": {
+    "set": "bro",
+    "number": "38",
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "bro,40": {
+    "set": "bro",
+    "number": "40",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "mh2,186": {
+    "set": "mh2",
+    "number": "186",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "dmu,19": {
+    "set": "dmu",
+    "number": "19",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "dmu,40": {
+    "set": "dmu",
+    "number": "40",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "dmu,42": {
+    "set": "dmu",
+    "number": "42",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "dmu,65": {
+    "set": "dmu",
+    "number": "65",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "dmu,107": {
+    "set": "dmu",
+    "number": "107",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "dmu,119": {
+    "set": "dmu",
+    "number": "119",
+    "foilQty": 0,
+    "regQty": 2
+  },
+  "dmu,133": {
+    "set": "dmu",
+    "number": "133",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "dmu,135": {
+    "set": "dmu",
+    "number": "135",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "dmu,170": {
+    "set": "dmu",
+    "number": "170",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "dmu,282": {
+    "set": "dmu",
+    "number": "282",
+    "foilQty": 0,
+    "regQty": 3
+  },
+  "dmu,283": {
+    "set": "dmu",
+    "number": "283",
+    "foilQty": 0,
+    "regQty": 4
+  },
+  "dmu,284": {
+    "set": "dmu",
+    "number": "284",
+    "foilQty": 0,
+    "regQty": 3
+  },
+  "dmu,285": {
+    "set": "dmu",
+    "number": "285",
+    "foilQty": 0,
+    "regQty": 5
+  },
+  "dmu,286": {
+    "set": "dmu",
+    "number": "286",
+    "foilQty": 0,
+    "regQty": 3
+  },
+  "bro,99": {
+    "set": "bro",
+    "number": "99",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bro,254": {
+    "set": "bro",
+    "number": "254",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "brr,83": {
+    "set": "brr",
+    "number": "83",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "brr,1": {
+    "set": "brr",
+    "number": "1",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bro,247": {
+    "set": "bro",
+    "number": "247",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "brc,23": {
+    "set": "brc",
+    "number": "23",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "brr,10": {
+    "set": "brr",
+    "number": "10",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bro,75": {
+    "set": "bro",
+    "number": "75",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bro,165": {
+    "set": "bro",
+    "number": "165",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bro,192": {
+    "set": "bro",
+    "number": "192",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "bro,256a": {
+    "set": "bro",
+    "number": "256a",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "brr,52": {
+    "set": "brr",
+    "number": "52",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "zne,27": {
+    "set": "zne",
+    "number": "27",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "znr,61": {
+    "set": "znr",
+    "number": "61",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "znr,263": {
+    "set": "znr",
+    "number": "263",
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "znr,46": {
+    "set": "znr",
+    "number": "46",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "znr,218": {
+    "set": "znr",
+    "number": "218",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "znr,238": {
+    "set": "znr",
+    "number": "238",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "znr,270": {
+    "set": "znr",
+    "number": "270",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "znr,193": {
+    "set": "znr",
+    "number": "193",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "znr,267": {
+    "set": "znr",
+    "number": "267",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "znr,53": {
+    "set": "znr",
+    "number": "53",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "znr,216": {
+    "set": "znr",
+    "number": "216",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "neo,57": {
+    "set": "neo",
+    "number": "57",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "neo,155": {
+    "set": "neo",
+    "number": "155",
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "neo,369": {
+    "set": "neo",
+    "number": "369",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "neo,378": {
+    "set": "neo",
+    "number": "378",
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "neo,436": {
+    "set": "neo",
+    "number": "436",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "neo,29": {
+    "set": "neo",
+    "number": "29",
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "neo,164": {
+    "set": "neo",
+    "number": "164",
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "neo,239": {
+    "set": "neo",
+    "number": "239",
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "neo,242": {
+    "set": "neo",
+    "number": "242",
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "neo,311": {
+    "set": "neo",
+    "number": "311",
+    "foilQty": 0,
+    "regQty": 1
+  },
+  "neo,313": {
+    "set": "neo",
+    "number": "313",
+    "foilQty": 1,
+    "regQty": 0
+  },
+  "neo,335": {
+    "set": "neo",
+    "number": "335",
     "foilQty": 0,
     "regQty": 1
   }

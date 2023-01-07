@@ -1,7 +1,26 @@
-import libraryJson from "./library.json";
-import collectionJson from "./collection.json";
+import libraryJson from "./json_data/library.json";
+import collectionJson from "./json_data/collection.json";
+import tagJson from "./json_data/tagged_collection.json";
+import evJson from "./json_data/ev.json";
+import setMappingJson from "./json_data/set_mapping.json";
 
-export const fetch2 = (path: string, params = null) => {
+import {
+  Card,
+  CardCollection,
+  CardResponse,
+  Collection,
+  VERSION_MAP,
+  EVData,
+  Library,
+  SetMapping,
+  TaggedCollection,
+  ViewCollectionData,
+  SET_TYPE_MAGIC,
+  SET_TYPE_POKEMON,
+  SET_TYPE_VSTAR_UNIVERSE,
+} from "./dataTypes";
+
+export const fetch2 = (path: string, params: any = null) => {
   if (params) {
     path = path + "?" + new URLSearchParams(params);
   }
@@ -26,9 +45,19 @@ export const fetch2 = (path: string, params = null) => {
 
 export const LIBRARY_KEY = "mtg_lib";
 export const COLLECTION_KEY = "mtg_collection";
+export const TAG_KEY = "mtg_tag";
+export const EV_KEY = "mtg_ev";
+export const SET_MAPPING_KEY = "ccg_sets";
 const THROTTLE_MS = 100;
+const LIBRARY_SAVE_BATCH = 100;
+const MIN_FETCH_COOLDOWN = 1000 * 60 * 60 * 24; // 1000 ms * 60 sec * 60 min * 24 hour
 
-type DataKey = typeof LIBRARY_KEY | typeof COLLECTION_KEY;
+export type DataKey =
+  | typeof LIBRARY_KEY
+  | typeof COLLECTION_KEY
+  | typeof TAG_KEY
+  | typeof EV_KEY
+  | typeof SET_MAPPING_KEY;
 
 export const getData = (key: DataKey) => {
   const localData = localStorage.getItem(key);
@@ -40,6 +69,12 @@ export const getData = (key: DataKey) => {
   }
   if (key === COLLECTION_KEY) {
     return collectionJson;
+  }
+  if (key === TAG_KEY) {
+    return tagJson;
+  }
+  if (key === SET_MAPPING_KEY) {
+    return setMappingJson;
   }
   return {};
 };
@@ -54,70 +89,18 @@ export const copyData = (data: Object) => {
   navigator.clipboard.writeText(jsonString);
 };
 
-interface CardResponse {
-  name: string;
-  image_uris?: {
-    small: string;
-    normal: string;
-  };
-  card_faces?: {
-    image_uris: {
-      small: string;
-      normal: string;
-    };
-  }[],
-  set_name: string;
-  set: string;
-  type_line: string;
-  prices: {
-    usd?: string;
-    usd_foil?: string;
-    usd_etched?: string;
-  };
-  collector_number: string;
-}
-
-export interface Card {
-  name: string;
-  type: string;
-  timestamp: number;
-  urlSmall: string;
-  urlNormal: string;
-  regPrice: number;
-  foilPrice: number;
-  set: string;
-  number: number;
-}
-
-export interface CardCollection {
-  set: string;
-  number: number;
-  regQty: number;
-  foilQty: number;
-}
-
-export type ViewCollectionData = {
-  collection: CardCollection;
-  card: Card;
-}
-
-export interface Collection {
-  [key: string]: CardCollection;
-}
-
-export interface Library {
-  [set: string]: {
-    cards: {
-      [number: string]: Card;
-    };
-    name: string;
-  };
-}
-
-export const addResult = (result: CardResponse, data: Library) => {
+const addResultMtg = (result: CardResponse, data: Library) => {
   data[result.set] ||= { name: result.set_name, cards: {} };
-  const urlSmall = result.image_uris ? result.image_uris.small : (result.card_faces ? result.card_faces[0].image_uris.small : "");
-  const urlNormal = result.image_uris ? result.image_uris.normal : (result.card_faces ? result.card_faces[0].image_uris.normal : "");
+  const urlSmall = result.image_uris
+    ? result.image_uris.small
+    : result.card_faces
+    ? result.card_faces[0].image_uris.small
+    : "";
+  const urlNormal = result.image_uris
+    ? result.image_uris.normal
+    : result.card_faces
+    ? result.card_faces[0].image_uris.normal
+    : "";
   data[result.set].cards[result.collector_number] = {
     name: result.name,
     type: result.type_line,
@@ -125,22 +108,56 @@ export const addResult = (result: CardResponse, data: Library) => {
     urlSmall,
     urlNormal,
     regPrice: Number(result.prices.usd),
-    foilPrice: Number(result.prices.usd_foil) || Number(result.prices.usd_etched),
+    foilPrice:
+      Number(result.prices.usd_foil) || Number(result.prices.usd_etched),
     set: result.set,
-    number: Number(result.collector_number),
+    number: result.collector_number,
+    rarity: result.rarity,
+    version: VERSION_MAP[SET_TYPE_MAGIC],
   };
-  saveData(LIBRARY_KEY, data);
+};
+
+const addResultVstar = (result: Card, data: Library, set: string) => {
+  data[set] ||= { name: "VStar Universe", cards: {} };
+  const {
+    name,
+    type,
+    urlSmall,
+    urlNormal,
+    regPrice,
+    foilPrice,
+    number,
+    rarity,
+  } = result;
+  data[set].cards[result.number] = {
+    name,
+    type,
+    urlSmall,
+    urlNormal,
+    regPrice,
+    foilPrice,
+    number,
+    rarity,
+    set,
+    timestamp: Date.now(),
+    version: VERSION_MAP[SET_TYPE_VSTAR_UNIVERSE],
+  };
 };
 
 export const fetchCard = async (
   set: string,
-  number: number,
+  number: string,
   library: Library,
   forced = false,
-  prevPrequestTime: number | null = null,
+  prevPrequestTime: number | null = null
 ): Promise<Card> => {
   const numberKey = String(number);
-  if (!forced && library[set]?.cards?.[numberKey]) {
+  const cardType = getSetMapping()[set];
+  if (
+    !forced &&
+    library[set]?.cards?.[numberKey] &&
+    library[set]?.cards?.[numberKey]?.version === VERSION_MAP[cardType]
+  ) {
     return library[set].cards[numberKey];
   }
 
@@ -148,28 +165,48 @@ export const fetchCard = async (
     // at least 100 ms between requests
     const throttle = prevPrequestTime + THROTTLE_MS - Date.now();
     if (throttle > 0) {
-      await new Promise(r => setTimeout(r, throttle)); 
+      await new Promise((r) => setTimeout(r, throttle));
     }
   }
 
-  //https://api.scryfall.com/cards/nec/37
-  const url = `https://api.scryfall.com/cards/${set}/${number}`;
-  console.log("Fetching ", url);
-  await fetch2(url).then((result) => {
-    if (result.success) {
-      addResult(JSON.parse(result.body), library);
-    }
-  });
+  if (cardType === "mtg") {
+    //https://api.scryfall.com/cards/nec/37
+    const url = `https://api.scryfall.com/cards/${set}/${number}`;
+    console.log("Fetching ", url);
+    await fetch2(url).then((result) => {
+      if (result.success) {
+        addResultMtg(JSON.parse(result.body), library);
+        if (!prevPrequestTime) {
+          // caller saves the result for batch operations
+          saveData(LIBRARY_KEY, library);
+        }
+      }
+    });
+  } else if (cardType === "vstar_universe") {
+    console.log("Fetching vstar ", number);
+    await fetch2("vstar", { id: number }).then((result) => {
+      if (result.success) {
+        addResultVstar(JSON.parse(result.body), library, set);
+        if (!prevPrequestTime) {
+          // caller saves the result for batch operations
+          saveData(LIBRARY_KEY, library);
+        }
+      }
+    });
+  } else {
+    throw new Error("Invalid card type " + cardType);
+  }
+
   return library[set]?.cards?.[numberKey];
 };
 
-const getCollectionKey = (set: string, number: Number) => {
+const getCollectionKey = (set: string, number: string) => {
   return `${set},${number}`;
 };
 
 const getInitialCardCollection = (
   set: string,
-  number: number
+  number: string
 ): CardCollection => ({
   set,
   number,
@@ -179,7 +216,7 @@ const getInitialCardCollection = (
 
 export const getCardCollection = (
   set: string,
-  number: number,
+  number: string,
   collection: Collection
 ): CardCollection => {
   return (
@@ -190,61 +227,141 @@ export const getCardCollection = (
 
 export const updateCardCollection = (
   card: CardCollection,
-  collection: Collection
+  collection: Collection,
+  save: boolean = true
 ) => {
   const key = getCollectionKey(card.set, card.number);
   if (card.regQty === 0 && card.foilQty === 0) {
-    delete(collection[key]);
+    delete collection[key];
   } else {
     collection[key] = card;
   }
-  saveData(COLLECTION_KEY, collection);
+  if (save) {
+    saveData(COLLECTION_KEY, collection);
+  }
 };
 
-export const getViewCollection = (collection: Collection, library: Library): ViewCollectionData[] => {
+export const updateTagCollection = (
+  taggedCollection: TaggedCollection,
+  tagName: string,
+  card: CardCollection,
+  save: boolean = true
+) => {
+  const collection = taggedCollection[tagName];
+  const key = getCollectionKey(card.set, card.number);
+  if (card.regQty === 0 && card.foilQty === 0) {
+    delete collection[key];
+  } else {
+    collection[key] = card;
+  }
+  if (save) {
+    saveData(TAG_KEY, taggedCollection);
+  }
+};
+
+export const getViewCollection = (
+  collection: Collection,
+  library: Library
+): ViewCollectionData[] => {
   const ret: ViewCollectionData[] = [];
   Object.keys(collection).forEach((col) => {
     const collectionData = collection[col];
     const cardData = library[collectionData.set]?.cards[collectionData.number];
     if (cardData) {
-      ret.push({collection: collectionData, card: cardData});
+      ret.push({ collection: collectionData, card: cardData });
     }
   });
   return ret;
-}
+};
 
-export const importSet = async (library: Library, set: string): Promise<boolean> => {
-  let end = false;
-  let cardNum = 1;
-  let prevRequestTime: number | null = null;
-  while (!end) {
-    //if (!library[set]?.cards[cardNum]) {
-      const currRequestTime = Date.now();
-      const result = await fetchCard(set, cardNum, library, true, prevRequestTime);
+export const batchFetch = async (
+  library: Library,
+  cards: CardCollection[]
+): Promise<boolean> => {
+  let prevRequestTime: number = 1;
+  let numRequests = 0;
+  for (const card of cards) {
+    const libCard = library[card.set]?.cards[String(card.number)];
+    const currRequestTime = Date.now();
+    if (
+      numRequests < LIBRARY_SAVE_BATCH &&
+      (!libCard || currRequestTime > libCard.timestamp + MIN_FETCH_COOLDOWN)
+    ) {
+      numRequests++;
+      await fetchCard(card.set, card.number, library, true, prevRequestTime);
       prevRequestTime = currRequestTime;
-      end = !result;
-      await new Promise(r => setTimeout(r, 100)); // at least 100 ms between requests
-    //}
-    cardNum++;
+    }
   }
+  saveData(LIBRARY_KEY, library);
+  return numRequests < LIBRARY_SAVE_BATCH;
+};
+
+export const importSet = async (
+  library: Library,
+  set: string
+): Promise<boolean> => {
+  let end = 0;
+  let cardNum = 1;
+  let prevRequestTime: number = 1;
+  while (end < 2) {
+    let currRequestTime = prevRequestTime;
+    if (!library[set]?.cards[cardNum]) {
+      currRequestTime = Date.now();
+    }
+    const result = await fetchCard(
+      set,
+      String(cardNum),
+      library,
+      false,
+      prevRequestTime
+    );
+    prevRequestTime = currRequestTime;
+    end = result ? 0 : end + 1;
+    cardNum++;
+    if (cardNum % LIBRARY_SAVE_BATCH === 0) {
+      saveData(LIBRARY_KEY, library);
+    }
+  }
+  saveData(LIBRARY_KEY, library);
 
   return Boolean(library[set]);
-}
+};
 
 export const getLibrary = (): Library => getData(LIBRARY_KEY);
 export const getCollection = (): Collection => getData(COLLECTION_KEY);
+export const getTaggedCollection = (): TaggedCollection => getData(TAG_KEY);
+export const getEv = (): EVData => getData(EV_KEY);
+export const getSetMapping = (): SetMapping => getData(SET_MAPPING_KEY);
 
 export const coerceNumber = (value: string): number => {
   const num = Number(value);
   return isNaN(num) ? 0 : num;
 };
 
-export const resetData = () => {
-  saveData(COLLECTION_KEY, {});
-  saveData(LIBRARY_KEY, {});
+export const resetData = (key: DataKey) => {
+  saveData(key, {});
 };
 
-export const importData = () => {
-  saveData(LIBRARY_KEY, libraryJson);
-  saveData(COLLECTION_KEY, collectionJson);
+export const importData = (key: DataKey) => {
+  if (key === LIBRARY_KEY) {
+    saveData(LIBRARY_KEY, libraryJson);
+  }
+  if (key === COLLECTION_KEY) {
+    saveData(COLLECTION_KEY, collectionJson);
+  }
+  if (key === TAG_KEY) {
+    saveData(TAG_KEY, tagJson);
+  }
+  if (key === EV_KEY) {
+    saveData(EV_KEY, evJson);
+  }
+};
+
+export const numberCmp = (n1: string, n2: string) => {
+  const sn1 = String(n1);
+  const sn2 = String(n2);
+  const cmp1 = sn1.length - sn2.length;
+  const cmp2 = sn1.localeCompare(sn2);
+  const cmp = cmp1 !== 0 ? cmp1 : cmp2;
+  return cmp;
 };

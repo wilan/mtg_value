@@ -1,36 +1,25 @@
 import React from "react";
+import { Card, CardCollection, DataSources } from "./dataTypes";
 import {
-  getLibrary,
-  getCollection,
-  Card,
-  CardCollection,
+  coerceNumber,
   fetchCard,
   getCardCollection,
+  getCollection,
+  getLibrary,
+  getTaggedCollection,
   updateCardCollection,
-  Library,
-  Collection,
-  coerceNumber,
+  updateTagCollection,
 } from "./utility";
+import AddCardTable from "./AddCardTable";
 
-const AddCard = ({
-  library,
-  setLibrary,
-  collection,
-  setCollection,
-}: {
-  library: Library;
-  setLibrary: (val: Library) => void;
-  collection: Collection;
-  setCollection: (val: Collection) => void;
-}) => {
-  const [setSymbol, setSetSymbol] = React.useState("");
-  const [number, setNumber] = React.useState(0);
-  const [foil, setFoil] = React.useState(false);
+const AddCard = ({ dataSources }: { dataSources: DataSources }) => {
+  const { library, setLibrary, collection, setCollection, taggedCollection, setTaggedCollection } =
+    dataSources;
   const [card, setCard] = React.useState<Card | null>(null);
   const [cardCollection, setCardCollection] =
     React.useState<CardCollection | null>(null);
 
-  const addCard = async () => {
+  const addCard = async (setSymbol: string, number: string, foil: boolean, selectedTag?: string) => {
     const result = await fetchCard(setSymbol, number, library);
     if (result) {
       setCard(result);
@@ -41,8 +30,15 @@ const AddCard = ({
       updateCardCollection(currCollection, collection);
       setLibrary(getLibrary());
       setCollection(getCollection());
-      //setFoil(false);
     }
+    if (selectedTag) {
+      const currCollection = getCardCollection(setSymbol, number, taggedCollection[selectedTag]);
+      currCollection.foilQty += foil ? 1 : 0;
+      currCollection.regQty += foil ? 0 : 1;
+      updateTagCollection(taggedCollection, selectedTag, currCollection);
+      setTaggedCollection(getTaggedCollection());
+    }
+    setLibrary(getLibrary());
   };
 
   const refreshCard = async () => {
@@ -61,56 +57,7 @@ const AddCard = ({
 
   return (
     <>
-      <table>
-        <tbody>
-          <tr>
-            <td>
-              <label style={{ marginRight: "15px" }}>Foil</label>
-            </td>
-            <td>
-              <label style={{ marginRight: "15px" }}>Set Symbol</label>
-            </td>
-            <td>
-              <label style={{ marginRight: "15px" }}>Number</label>
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>
-              <input
-                type="checkbox"
-                checked={foil}
-                onChange={() => setFoil(!foil)}
-              />
-            </td>
-            <td>
-              <input
-                type="text"
-                style={{ width: "45px" }}
-                value={setSymbol}
-                onChange={(e) => setSetSymbol(e.target.value)}
-              />
-            </td>
-            <td>
-              <input
-                type="text"
-                style={{ width: "45px" }}
-                value={number}
-                onChange={(e) => setNumber(coerceNumber(e.target.value))}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter") {
-                    addCard();
-                  }
-                }}
-                onFocus={(e) => e.target.select()}
-              />
-            </td>
-            <td>
-              <button onClick={() => addCard()}>Add</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <AddCardTable dataSources={dataSources} addCard={addCard} showTagSelector/>
       {cardCollection && card && (
         <table>
           <tbody>
